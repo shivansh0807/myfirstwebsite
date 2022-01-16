@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cyan;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: x-large;
+
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px;
+    gap: 10px;
+}
+.navigation{
+    grid-column: 1/4;
+    background-color: cornsilk;
+}
+
+.main{
+    background-color: lightgrey;
+    opacity: 0.8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0;
+}
+.main input{
+    padding: 10px;
+}
+.main button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    background-color: royalblue;
+}
+.main .option{
+    line-height: 50px;
+    padding: 10px;
+}
+.main .image{
+    padding: 0;
+}
+.image img{
+    max-width: 100%;
+}
+nav{
+    background-color: coral;
+    color: indigo;
+    font-family: fantasy;
+    /* height: 100px; */
+    position: relative;
+}
+nav > ul{
+    color: indigo;
+    list-style-type: none;
+    border: 2px solid yellow;
+}
+nav > ul > li{
+    display: inline;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    font-size: large;
+    color: yellow;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.btn{
+    background-color: coral;
+    color: yellow;
+    font-family: fantasy;
+    padding: 10px;
+    border: none;
+    font-size: large;
+}
+.dropdowncontent{
+    display: none;
+    background-color: coral;
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    border:1px yellow;
+}
+.dropdowncontent a {
+    text-decoration: none;
+    color: greenyellow;
+    display: block;
+    padding: 10px;
+}
+.dropdowncontent a:hover {
+background-color: #3dadff;
+}
+.dropdown:hover .dropdowncontent{display: block;}
+
+.dropdown:hover .btn {
+background-color: #000e44;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite locatios</title>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    }
+    body{
+        background-image: url("https://wallpapercave.com/wp/5JdtbnY.jpg");
+        color: maroon;
+        background-color: yellowgreen;
+        text-align: center;
+        font-size: x-large;
+        margin-left: 200px;
+        margin-right: 200px;
+        font-family: fantasy
+    }
+    .europe{
+        color: teal;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        background-color: lightsalmon;
+        border-width: 10px;
+            border-color: yellow;
+            border-style: double;
+            border-radius: 200px;
+    }
+    .america{
+        color: magenta;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: lightsalmon;
+        border-width: 10px;
+            border-color: yellow;
+            border-style: double;
+            border-radius: 200px;
+    }
+    .africa{
+        color: mediumpurple;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: lightsalmon;
+        border-width: 10px;
+            border-color: yellow;
+            border-style: double;
+            border-radius: 200px;
+    }
+    .img1{
+     border: 7px dashed yellow;
+    }
+    .img2{
+        border: 7px double greenyellow;
+    }
+    .img3{
+        border: 7px dotted red;
+    }
+    nav{
+                    background-color: coral;
+                    color: indigo;
+                    font-family: fantasy;
+                    /* height: 100px; */
+                    position: relative;
+                }
+                nav > ul{
+                    color: indigo;
+                    list-style-type: none;
+                    border: 2px solid yellow;
+                }
+                nav > ul > li{
+                    display: inline;
+                    padding: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                nav > ul > li > a{
+                    text-decoration: none;
+                    font-size: large;
+                    color: yellow;
+                }
+                nav{
+                    background-color: coral;
+                    color: indigo;
+                    font-family: fantasy;
+                    /* height: 100px; */
+                    position: relative;
+                }
+                nav > ul{
+                    color: indigo;
+                    list-style-type: none;
+                    border: 2px solid yellow;
+                }
+                nav > ul > li{
+                    display: inline;
+                    padding: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                nav > ul > li > a{
+                    text-decoration: none;
+                    font-size: large;
+                    color: yellow;
+                }
+                .dropdown{
+                    position: relative;
+                    display: inline-block;
+                }
+                .btn{
+                    background-color: coral;
+                    color: yellow;
+                    font-family: fantasy;
+                    padding: 10px;
+                    border: none;
+                    font-size: large;
+                }
+                .dropdowncontent{
+                    display: none;
+                    background-color: coral;
+                    position: absolute;
+                    z-index: 1;
+                    min-width: 160px;
+                    border:1px yellow;
+                }
+                .dropdowncontent a {
+                    text-decoration: none;
+                    color: greenyellow;
+                    display: block;
+                    padding: 10px;
+                }
+                .dropdowncontent a:hover {
+                background-color: #3dadff;
+                }
+            .dropdown:hover .dropdowncontent{display: block;}
+            
+            .dropdown:hover .btn {
+            background-color: #000e44;
+            }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./rubix_cube.html">Rubix Cube</a></li>
+            <li><a href="./Contact_us.html">Contact us</a></li>
+            <!-- <li><a href="./myfavlocation.html">MY FAVORITE LOCATIONS</a></li>
+            <li><a href="./planets.html">PLANETS</a></li>
+            <li><a href="./tajmahal.html">TAJ MAHAL</a></li>
+            <li><a href="./rubix_cube.html"> RUBIX CUBE</a></li> -->
+            <!-- <li><a href="./hot_chocolate_milk.html">HOT CHOCOLATE MILK</a></li> -->
+            <div class="dropdown">
+                <button class="btn">Projects</button>
+                <div class="dropdowncontent">
+                <a href="./myfavlocation.html">My Favourite Location</a>
+                <a href="./planets.html">Planets</a>
+                <a href="./tajmahal.html">Taj Mahal</a>
+                <a href="./q1.html">QUESTION 1</a>
+                <a href="./q2.html">QUESTION 2</a>
+                <a href="./q3.html">QUESTION 3</a>
+                </div>
+                </div>
+
+        </ul>
+        </nav>
+    </header>
+    <h1>My favorite location</h1>
+    <br>
+    <div class="europe">
+        <h2>Europe</h2>
+        <img class="img1"src="./static/rome.jpg" alt="europe image" width="50%">
+        <p>When I went to Europe I enjoyed alot. I had a great experience with my family.</p>
+        <p>Learn more about europe</p><a href="https://en.wikipedia.org/wiki/Europe">here</a>
+    </div>
+    <br>
+    <div class="america">
+        <h2>America</h2>
+        <img class="img2"src="./static/america.jpg" alt="america image">
+        <p>America is a wonderful country with a lot of beauty</p>
+    </div>
+    <br>
+    <div class="africa">
+        <h2>Africa</h2>
+        <img class="img3"src="./static/africa.jpg" alt="africa image">
+        <p>Africa is full of jungles/forests. :)</p>
+    </div>
+</body>
+</html>

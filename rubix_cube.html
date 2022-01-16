@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                *{
+                    margin: 0px;
+                    padding: 0px;
+                }
+                body{
+                    background-color: violet;
+                    font-size: x-large;
+                    font-family: cursive;
+                    text-align: center;
+                    margin-left: 200px;
+                    margin-right: 200px;
+         }
+         nav{
+                    background-color: coral;
+                    color: indigo;
+                    font-family: fantasy;
+                    /* height: 100px; */
+                    position: relative;
+                }
+                nav > ul{
+                    color: indigo;
+                    list-style-type: none;
+                    border: 2px solid yellow;
+                }
+                nav > ul > li{
+                    display: inline;
+                    padding: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                nav > ul > li > a{
+                    text-decoration: none;
+                    font-size: large;
+                    color: yellow;
+                }
+                h3, p{
+                    color: crimson;
+                }
+                h1, li, h2{
+                    color: gold;
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                }
+                nav{
+                    background-color: coral;
+                    color: indigo;
+                    font-family: fantasy;
+                    /* height: 100px; */
+                    position: relative;
+                }
+                nav > ul{
+                    color: indigo;
+                    list-style-type: none;
+                    border: 2px solid yellow;
+                }
+                nav > ul > li{
+                    display: inline;
+                    padding: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                nav > ul > li > a{
+                    text-decoration: none;
+                    font-size: large;
+                    color: yellow;
+                }
+                .dropdown{
+                    position: relative;
+                    display: inline-block;
+                }
+                .btn{
+                    background-color: coral;
+                    color: yellow;
+                    font-family: fantasy;
+                    padding: 10px;
+                    border: none;
+                    font-size: large;
+                }
+                .dropdowncontent{
+                    display: none;
+                    background-color: coral;
+                    position: absolute;
+                    z-index: 1;
+                    min-width: 160px;
+                    border:1px yellow;
+                }
+                .dropdowncontent a {
+                    text-decoration: none;
+                    color: greenyellow;
+                    display: block;
+                    padding: 10px;
+                }
+                .dropdowncontent a:hover {
+                background-color: #3dadff;
+                }
+            .dropdown:hover .dropdowncontent{display: block;}
+            
+            .dropdown:hover .btn {
+            background-color: #000e44;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./rubix_cube.html">Rubix Cube</a></li>
+            <li><a href="./Contact_us.html">Contact us</a></li>
+            <!-- <li><a href="./myfavlocation.html">MY FAVORITE LOCATIONS</a></li>
+            <li><a href="./planets.html">PLANETS</a></li>
+            <li><a href="./tajmahal.html">TAJ MAHAL</a></li>
+            <li><a href="./rubix_cube.html"> RUBIX CUBE</a></li> -->
+            <!-- <li><a href="./hot_chocolate_milk.html">HOT CHOCOLATE MILK</a></li> -->
+            <div class="dropdown">
+                <button class="btn">Projects</button>
+                <div class="dropdowncontent">
+                <a href="./myfavlocation.html">My Favourite Location</a>
+                <a href="./planets.html">Planets</a>
+                <a href="./tajmahal.html">Taj Mahal</a>
+                <a href="./q1.html">QUESTION 1</a>
+                <a href="./q2.html">QUESTION 2</a>
+                <a href="./q3.html">QUESTION 3</a>
+                </div>
+                </div>
+
+        </ul>
+        </nav>
+    </header>
+    <h1>LEARN HOW TO SOLVE RUBIX CUBE</h1>
+    <p>See this video to know how to solve a rubix cube.</p>
+    <iframe src="https://youtube.com/embed/kXhQzLeW3fc" frameborder="2" width="600" height="300"></iframe>
+</body>
+</html>
